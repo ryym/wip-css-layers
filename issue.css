@@ -1,0 +1,15 @@
+/* rule A */
+.foo[data-component] .head .title .strong {
+  font-weight: bold;
+}
+
+/* reset of rule A */
+.foo [data-component] .head .title .strong {
+  font-weight: normal;
+}
+
+/* another component's rule B */
+[data-component] .bar[data-component] .strong {
+  font-size: 2rem;
+  font-weight: bold;
+}

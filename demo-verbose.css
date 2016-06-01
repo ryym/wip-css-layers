@@ -1,0 +1,127 @@
+/***** red *****/
+
+.red[data-component] {
+  border: 1px solid red;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* component 1 */
+
+.red[data-component] .title {
+  color: red;
+}
+
+.red [data-component] .title {
+  color: inherit;
+}
+
+/* component 2 */
+
+[data-component] .red[data-component] .title {
+  color: red;
+}
+
+[data-component] .red [data-component] .title {
+  color: inherit;
+}
+
+/* component 3 */
+
+[data-component] [data-component] .red[data-component] .title {
+  color: red;
+}
+
+[data-component] [data-component] .red [data-component] .title {
+  color: inherit;
+}
+
+/***** line *****/
+
+.line[data-component] {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* component 1 */
+
+.line[data-component] .title {
+  text-decoration: underline;
+}
+
+.line [data-component] .title {
+  text-decoration: none;
+}
+
+/* component 2 */
+
+[data-component] .line[data-component] .title {
+  text-decoration: underline;
+}
+
+[data-component] .line [data-component] .title {
+  text-decoration: none;
+}
+
+/* component 3 */
+
+[data-component] [data-component] .line[data-component] .title {
+  text-decoration: underline;
+}
+
+[data-component] [data-component] .line [data-component] .title {
+  text-decoration: none;
+}
+
+/***** bggr *****/
+
+.bggr[data-component] {
+  border: 1px solid green;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* component 1 */
+
+.bggr[data-component] .title {
+  background-color: green;
+  color: white;
+}
+
+.bggr [data-component] .title {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* component 2 */
+
+[data-component] .bggr[data-component] .title {
+  background-color: green;
+}
+
+[data-component] .bggr [data-component] .title {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* component 3 */
+
+[data-component] [data-component] .bggr[data-component] .title {
+  background-color: green;
+}
+
+[data-component] [data-component] .bggr [data-component] .title {
+  background-color: transparent;
+  color: inherit;
+}
+
+
+/***** others *****/
+
+.divider {
+  background-color: #51d0ec;
+  margin: 20px 0;
+  height: 3px;
+  width: 100%;
+}
